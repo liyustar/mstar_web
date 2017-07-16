@@ -10,8 +10,9 @@
 <div id="list">
     {% for item in posts %}
         <div class="p">
-            <h4><a href="">{{item[1]}}</a></h4>
-            <p>{{item[2]}}</p>
+            <h4><a href="">{{item['name']}}</a></h4>
+            <p>城市：{{item['city']}}</p>
+            <p>规模：{{item['scale']}}亿元</p>
         </div>
     {% endfor %}
 </div>

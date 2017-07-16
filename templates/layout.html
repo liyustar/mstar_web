@@ -2,12 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- 引入 ECharts 文件 -->
     <title>Layout Title</title>
+    <script src="{{url_for('static', filename='js/ECharts/echarts.min.js')}}"></script>
 </head>
 <body>
 <header>
     <a href="{{url_for('index')}}">首页</a>
     <a href="{{url_for('list')}}">列表</a>
+    <a href="{{url_for('test')}}">测试页面</a>
 </header>
 <div id="content">
     {% block body %} {% endblock %}
